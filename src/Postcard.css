@@ -1,0 +1,37 @@
+.postcard{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 25px 5px black;
+}
+
+.postcard-paragraph{
+  padding: 10%;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  line-height: 30pt;
+}
+
+.postcard-divider{
+  transform: rotate(90deg);
+  position: absolute;
+  border-top: 3px solid black;
+}
+
+.postcard-picture{
+  width: 33%;
+  height:fit-content;
+}
+
+.postcard-animate-enter{
+  opacity: 0;
+}
+
+.postcard-animate-enter-active{
+  opacity: 1;
+  transition: opacity 2s;
+}
