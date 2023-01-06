@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React from 'react';
 import { CSSTransition } from "react-transition-group";
 import './Postcard.css';
 
@@ -14,29 +14,39 @@ import './Postcard.css';
 
 
 
-class Postcard extends React.PureComponent {
+class Postcard extends React.Component {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
-        this.startAnimation = this.startAnimation.bind(this);
         this.state = {
             type: this.props.type,
             content: this.props.content,
             url: this.props.url,
-            in: this.props.in
+            in: this.props.in,
+            scrollPosition: 0
         }
     }
 
-    startAnimation(){
-        this.setState({in: !this.state.in});
-        console.log(this.state.in)
-        this.render();
+    shouldComponentUpdate(newProps) {
+        if (newProps.in !== this.props.in) {
+            return false;
+        }
+        console.log("Will Update");
+        return true;
     }
 
-    componentDidUpdate(props){
-        this.setState({in: props.in});
-        console.log(this.state.in);
-        this.render();
+    componentDidMount() {
+        let temp = this.myRef.current.getBoundingClientRect();
+        if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
+            this.setState({ in: true });
+            return;
+        }
+        window.addEventListener("scroll", () => {
+            let temp = this.myRef.current.getBoundingClientRect();
+            if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
+                this.setState({ in: true });
+            }
+        });
     }
 
     render() {
@@ -49,8 +59,6 @@ class Postcard extends React.PureComponent {
 
         //create random angle
         let angle = Math.random() * 40 - 20;
-
-        //Upon scrolling into view it will activate the animation by setting 'in' state to true;
 
         if (this.state.type === "paragraph") {
             return (

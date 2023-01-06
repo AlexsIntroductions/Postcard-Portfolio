@@ -1,20 +1,21 @@
 const cards = document.getElementsByClassName("postcard");
 let aligned = false;
 
-function alignItems(){
+function alignItems() {
     //all need to be animated at the same time
-    for(let i = 0; i < cards.length; i++){
-        cards[i].style.transform = "rotate(0deg)";
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.add("align-animation-class");
     }
-    aligned = true;
+    setTimeout(() => {
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].style.transform = "rotate(0deg)";
+        }
+    }, 1000);
 }
 
-function combineItems(){
+function combineItems() {
     alignItems();
-    for(let i = 0; i < cards.length; i++){
-        cards[i].style.boxShadow = "0px -5px 25px 5px black"
-        console.log(cards[i].style.boxShadow)
+    for (let i = 0; i < cards.length; i++) {
         cards[i].classList.add("combine-animation-class");
     }
-    
 }
