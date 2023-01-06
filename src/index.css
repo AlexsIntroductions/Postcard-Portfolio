@@ -1,8 +1,10 @@
-body {
+body{
+  background-image: url(../images/Tabletop.jpg);
+  background-size: cover;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2%;
-  background-image: url(../images/Tabletop.jpg);
-  background-size: cover;
 }

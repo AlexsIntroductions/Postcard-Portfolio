@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import { CSSTransition } from "react-transition-group";
 import './Postcard.css';
 
@@ -13,16 +13,30 @@ import './Postcard.css';
 //text is separated 
 
 
-class Postcard extends React.Component {
+
+class Postcard extends React.PureComponent {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
+        this.startAnimation = this.startAnimation.bind(this);
         this.state = {
             type: this.props.type,
             content: this.props.content,
             url: this.props.url,
             in: this.props.in
         }
+    }
+
+    startAnimation(){
+        this.setState({in: !this.state.in});
+        console.log(this.state.in)
+        this.render();
+    }
+
+    componentDidUpdate(props){
+        this.setState({in: props.in});
+        console.log(this.state.in);
+        this.render();
     }
 
     render() {
