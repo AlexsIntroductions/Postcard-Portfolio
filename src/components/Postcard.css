@@ -10,6 +10,13 @@
   position: relative;
 }
 
+.postcard-container-half{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
 .postcard-paragraph{
   padding: 10%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -25,8 +32,12 @@
 }
 
 .postcard-picture{
-  width: 33%;
-  height:fit-content;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.postcard-picture-rotate90{
+  transform: rotate(90deg);
 }
 
 .postcard-animate-appear{

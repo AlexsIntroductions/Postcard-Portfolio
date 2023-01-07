@@ -1,5 +1,5 @@
 body{
-  background-image: url(../images/Tabletop.jpg);
+  background-image: url(./images/Tabletop.jpg);
   background-size: cover;
 }
 main {
@@ -23,9 +23,46 @@ footer{
   background-color: black;
 }
 
-.two-postcards{
+
+.format-button-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  position: sticky;
+  left: 0;
+  top: 40%;
+  z-index: 2;
+  width: fit-content;
+}
+
+.format-button {
+  z-index: 2;
+  font-size: 32px;
+  margin: 1%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.align-animation-class{
+  animation-name: align-animation;
+  animation-duration: 0.5s;
+}
+
+.combine-animation-class{
+  animation-name: combine-animation;
+  animation-duration: 1s;
+}
+
+@keyframes align-animation{
+  50%{transform: scale(1.2, 1.2); box-shadow: 0px -10px 30px 10px black;}
+  75%{rotate: 0deg;}
+  100%{transform: scale(1,1);box-shadow: 0px -5px 25px 5px black;}
+}
+
+@keyframes combine-animation {
+  0%{margin: 1.5%;}
+  25%{margin: 1%;}
+  50%{margin: 0%; transform: scale(1.025, 0.9425);}
+  75%{margin: -1%; transform: scale(1.1, 0.95);}
+  100%{margin: 0%; transform: scale(1, 1);}
 }
