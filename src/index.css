@@ -1,10 +1,11 @@
 body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url(./images/Tabletop.jpg);
   background-size: cover;
-}
-main {
-  margin: 2%;
-  margin-bottom: 7%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 #root {
@@ -14,15 +15,18 @@ main {
 }
 
 footer{
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  left: 0;
-  height: 7%;
-  position: sticky;
-  background-color: black;
-}
+  color:white;
+  background-image: url(./images/Dark-Wood.jpg);
 
+  padding: 2%;
+
+  left:0;
+  bottom: 0;
+
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+}
 
 .format-button-container {
   display: flex;

@@ -1,0 +1,28 @@
+/*KREDIT*/
+@font-face {
+    font-family: kredit;
+    src: url(./kredit.ttf);
+}
+/*ELEGANT TYPEWRITER*/
+@font-face {
+    font-family: elegant-typewriter-bold;
+    src: url(./ELEGANT\ TYPEWRITER\ Bold.ttf);
+}
+@font-face {
+    font-family: elegant-typewriter-light;
+    src: url(./ELEGANT\ TYPEWRITER\ Light.ttf);
+}
+@font-face {
+    font-family: elegant-typewriter;
+    src: url(./ELEGANT\ TYPEWRITER\ Regular.ttf);
+}
+/*INCOGNITYPE*/
+@font-face {
+    font-family: incognitype;
+    src: url(./Incognitype.ttf);
+}
+/*SPECIAL ELITE*/
+@font-face {
+    font-family: special-elite;
+    src: url(./SpecialElite.ttf);
+}

@@ -1,0 +1,28 @@
+.my-header {
+    background-image: url(../../images/Dark-Wood.jpg);
+    position: fixed;
+    margin-top: 0;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+    height: 10%;
+    max-height: 100px;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-container{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main {
+    padding-bottom: 7%;
+    padding-top: 7%;
+    overflow: visible;
+  }

@@ -19,12 +19,12 @@ class Postcard extends React.Component {
         if (newProps.in !== this.props.in) {
             return false;
         }
-        console.log("Will Update");
         return true;
     }
 
     componentDidMount() {
         let temp = this.myRef.current.getBoundingClientRect();
+
         if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
             this.setState({ in: true });
             return;
@@ -52,7 +52,13 @@ class Postcard extends React.Component {
             case "paragraph": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
-                        <div ref={this.myRef} className='postcard' style={{ width: width, height: height, transform: 'rotate(' + angle + 'deg)' }}>
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
                             <div className='postcard-container-half'>
                                 <p className='postcard-paragraph'>{this.state.content}</p>
                             </div>
@@ -62,12 +68,18 @@ class Postcard extends React.Component {
                             </div>
                         </div>
                     </CSSTransition>
-                )
+                );
             }
             case "picture": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
-                        <div ref={this.myRef} className='postcard' style={{ width: width, height: height, transform: 'rotate(' + angle + 'deg)' }}>
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
                             <div className='postcard-container-half postcard-picture-rotate90'>
                                 <img src={this.state.url} alt="failed" className='postcard-picture' />
                             </div>
@@ -77,25 +89,39 @@ class Postcard extends React.Component {
                             </div>
                         </div>
                     </CSSTransition>
-                )
+                );
             }
             case "title": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
-                        <div ref={this.myRef} className='postcard' style={{ width: width, height: height, transform: 'rotate(' + angle + 'deg)' }}>
-                            
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+
+
                         </div>
                     </CSSTransition>
-                )
+                );
             }
             case "list": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
-                        <div ref={this.myRef} className='postcard' style={{ width: width, height: height, transform: 'rotate(' + angle + 'deg)' }}>
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+
 
                         </div>
                     </CSSTransition>
-                )
+                );
             }
             default: {
                 break;
