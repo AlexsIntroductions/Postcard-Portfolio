@@ -11,6 +11,10 @@ class TabletopEducation extends React.Component {
                 <TitleLabel content={"EDUCATION"} />
                 <>
                     <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EDUCATION"} />
+                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EDUCATION"} />
+                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EDUCATION"} />
+                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EDUCATION"} />
+                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EDUCATION"} />
                 </>
             </>
         );

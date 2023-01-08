@@ -10,10 +10,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
-    <>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Navbar />}>
+                    <Route index element={<TabletopHome />} />
                     <Route path='home' element={<TabletopHome />} />
                     <Route path="experience" element={<TabletopExperience />} />
                     <Route path="education" element={<TabletopEducation />} />
@@ -21,5 +21,4 @@ root.render(
                 </Route>
             </Routes>
         </BrowserRouter>
-    </>
 );
