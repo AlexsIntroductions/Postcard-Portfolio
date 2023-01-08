@@ -12,10 +12,10 @@ class Navbar extends React.Component {
                         TESTING
                     </div>
                     <div className="header-container">
-                        <Link to="/Home">Home</Link>
-                        <Link to="/experience">Experience</Link>
-                        <Link to="/education">Education</Link>
-                        <Link to="/projects">Projects</Link>
+                        <Link className="link-style" to="/Home"><PostIt content={"Home"}/></Link>
+                        <Link className="link-style" to="/experience"><PostIt content={"Experience"}/></Link>
+                        <Link className="link-style" to="/education"><PostIt content={"Education"}/></Link>
+                        <Link className="link-style" to="/projects"><PostIt content={"Projects"}/></Link>
                     </div>
                 </header>
                 <main>
