@@ -23,16 +23,18 @@ class Postcard extends React.Component {
     }
 
     componentDidMount() {
-        let temp = this.myRef.current.getBoundingClientRect();
+        let current = this.myRef.current.getBoundingClientRect();
 
-        if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
+        if (parseInt(current.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
             this.setState({ in: true });
             return;
         }
         window.addEventListener("scroll", () => {
-            let temp = this.myRef.current.getBoundingClientRect();
-            if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
-                this.setState({ in: true });
+            if (this.myRef.current !== null) {
+                let temp = this.myRef.current.getBoundingClientRect();
+                if (parseInt(temp.top) < window.innerHeight - (window.innerHeight / 3) && this.state.in !== true) {
+                    this.setState({ in: true });
+                }
             }
         });
     }
