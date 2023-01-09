@@ -1,14 +1,14 @@
 .post-it{
     color: black;
-    width: 5vw;
-    min-width: 100px;
-    height: 5vw;
-    min-height: 100px;
+    width: 7vw;
+    min-width: 75px;
+    height: 7vw;
+    min-height: 75px;
 
-    font-size: 1em;
+    font-size: 0.95em;
 
     margin: 1vw;
-    margin-top: 3vw;
+    margin-top: 5vw;
 
     display: flex;
     align-items: center;

@@ -16,6 +16,19 @@
   width: 50%;
 }
 
+.postcard-container-full{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.postcard-column{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .postcard-paragraph{
   padding: 10%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -51,6 +64,16 @@
 
 .postcard-animate-enter-done{
   opacity: 1;
+}
+
+.title{
+  color: black;
+  font-size: 5vw;
+}
+
+.subtitle{
+  color:darkslategray;
+  font-size: 3vw;
 }
 
 @keyframes bounce-in{

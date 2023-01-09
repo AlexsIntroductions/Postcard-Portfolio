@@ -8,7 +8,8 @@ class Postcard extends React.Component {
         this.myRef = React.createRef();
         this.state = {
             type: this.props.type,
-            content: this.props.content,
+            contentL: this.props.contentL,
+            contentR: this.props.contentR,
             url: this.props.url,
             in: this.props.in,
             scrollPosition: 0
@@ -62,11 +63,11 @@ class Postcard extends React.Component {
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
                             <div className='postcard-container-half'>
-                                <p className='postcard-paragraph'>{this.state.content}</p>
+                                <p className='postcard-paragraph'>{this.state.contentL}</p>
                             </div>
                             <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
                             <div className='postcard-container-half'>
-                                <p className='postcard-paragraph'>{this.state.content}</p>
+                                <p className='postcard-paragraph'>{this.state.contentR}</p>
                             </div>
                         </div>
                     </CSSTransition>
@@ -87,7 +88,7 @@ class Postcard extends React.Component {
                             </div>
                             <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
                             <div className='postcard-container-half'>
-                                <p className='postcard-paragraph'>{this.state.content}</p>
+                                <p className='postcard-paragraph'>{this.state.contentL}</p>
                             </div>
                         </div>
                     </CSSTransition>
@@ -103,8 +104,10 @@ class Postcard extends React.Component {
                                 transform: 'rotate(' + angle + 'deg)',
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
-
-
+                            <div className='postcard-column'>
+                                <span className='title'>{this.props.contentL}</span>
+                                <span className='subtitle'>{this.props.contentR}</span>
+                            </div>
                         </div>
                     </CSSTransition>
                 );
@@ -114,13 +117,12 @@ class Postcard extends React.Component {
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
                         <div ref={this.myRef} className='postcard'
                             style={{
-                                width: width,
-                                height: height,
+                                width: height,
+                                height: width,
                                 transform: 'rotate(' + angle + 'deg)',
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
-
-
+                                {this.props.contentL}
                         </div>
                     </CSSTransition>
                 );

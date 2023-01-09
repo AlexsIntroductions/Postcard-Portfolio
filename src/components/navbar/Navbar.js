@@ -9,9 +9,6 @@ class Navbar extends React.Component {
             <>
                 <header className="my-header">
                     <div className="header-container">
-                        TESTING
-                    </div>
-                    <div className="header-container">
                         <Link className="link-style" to="/Home"><PostIt content={"Home"}/></Link>
                         <Link className="link-style" to="/experience"><PostIt content={"Experience"}/></Link>
                         <Link className="link-style" to="/education"><PostIt content={"Education"}/></Link>

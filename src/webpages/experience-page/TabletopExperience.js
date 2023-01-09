@@ -10,11 +10,7 @@ class TabletopExperience extends React.Component {
             <>
                 <TitleLabel content={"WORK EXPERIENCE"} />
                 <>
-                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EXPERIENCE"} />
-                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EXPERIENCE"} />
-                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EXPERIENCE"} />
-                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EXPERIENCE"} />
-                    <Postcard type={"paragraph"} in={false} url={""} content={"YOURE IN EXPERIENCE"} />
+                    <Postcard type={"paragraph"} in={false} url={""} contentL={"YOURE IN EXPERIENCE"} contentR={"Welcome"} />
                 </>
             </>
         );
