@@ -26,3 +26,8 @@
     font-family: special-elite;
     src: url(./SpecialElite.ttf);
 }
+
+@font-face {
+    font-family: bebas;
+    src: url(./Bebas-Regular.ttf);
+}

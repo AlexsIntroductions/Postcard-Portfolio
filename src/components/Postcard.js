@@ -49,7 +49,7 @@ class Postcard extends React.Component {
         let height = width * 0.6;
 
         //create random angle
-        let angle = Math.random() * 40 - 20;
+        let angle = Math.random() * 25 - 12.5;
 
         switch (this.state.type) {
             case "paragraph": {
