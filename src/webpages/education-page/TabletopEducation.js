@@ -4,7 +4,6 @@ import { TitleLabel } from '../../components/TitleLabel';
 import './TabletopEducation.css'
 
 class TabletopEducation extends React.Component {
-
     render() {
         return (
             <>
@@ -13,7 +12,6 @@ class TabletopEducation extends React.Component {
                     <Postcard
                         type={"title"}
                         in={false}
-                        url={""}
                         contentL={"Bachelor of Science in Computer Engineering: University of Florida"}
                         contentR={"Expected Graduation: Spring 2023 | GPA: 2.55"}
                     />
@@ -25,9 +23,8 @@ class TabletopEducation extends React.Component {
                     <Postcard
                         type={"title"}
                         in={false}
-                        url={""}
                         contentL={"Associate of Arts: Santa Fe Community College"}
-                        contentR={"Completed: April 2020 | GPA: 2.55"}
+                        contentR={"Completed: April 2020 | GPA: 3.31"}
                     />
                 </>
             </>
