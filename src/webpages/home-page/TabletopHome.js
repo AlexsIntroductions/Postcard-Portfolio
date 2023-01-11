@@ -10,30 +10,34 @@ class TabletopHome extends React.Component {
             <>
                 <TitleLabel content={"HOME PAGE"} />
                 <>
-                    <Postcard 
-                    type={"paragraph"} 
-                    in={false} 
-                    url={""} 
-                    contentL={"YOURE ON THE HOME PAGE"} 
-                    contentR={"Welcome"}/>
-                    <Postcard 
-                    type={"paragraph"} 
-                    in={false} 
-                    url={""} 
-                    contentL={"YOURE ON THE HOME PAGE"} 
-                    contentR={"Welcome"}/>
-                    <Postcard 
-                    type={"paragraph"} 
-                    in={false} 
-                    url={""} 
-                    contentL={"YOURE ON THE HOME PAGE"} 
-                    contentR={"Welcome"}/>
-                    <Postcard 
-                    type={"paragraph"} 
-                    in={false} 
-                    url={""} 
-                    contentL={"YOURE ON THE HOME PAGE"} 
-                    contentR={"Welcome"}/>
+                    <Postcard
+                        type={"paragraph"}
+                        in={false}
+                        url={""}
+                        contentL={"YOURE ON THE HOME PAGE"}
+                        contentR={"Welcome"}
+                    />
+                    <Postcard
+                        type={"paragraph"}
+                        in={false}
+                        url={""}
+                        contentL={"YOURE ON THE HOME PAGE"}
+                        contentR={"Welcome"}
+                    />
+                    <Postcard
+                        type={"paragraph"}
+                        in={false}
+                        url={""}
+                        contentL={"YOURE ON THE HOME PAGE"}
+                        contentR={"Welcome"}
+                    />
+                    <Postcard
+                        type={"paragraph"}
+                        in={false}
+                        url={""}
+                        contentL={"YOURE ON THE HOME PAGE"}
+                        contentR={"Welcome"}
+                    />
                 </>
             </>
         );
