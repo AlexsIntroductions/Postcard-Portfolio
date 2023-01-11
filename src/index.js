@@ -22,3 +22,10 @@ root.render(
             </Routes>
         </BrowserRouter>
 );
+
+//removes my nameplate on mobile devices because its too big to display
+//everything comfortably
+setTimeout(() => {
+    if(window.innerWidth < 600){
+    document.getElementsByClassName("base")[0].remove()
+}}, 1);
