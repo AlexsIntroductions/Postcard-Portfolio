@@ -18,7 +18,7 @@ class TabletopEducation extends React.Component {
                     <Postcard
                         type={"list"}
                         in={false}
-                        contentL={"testing"}
+                        contentL={"4\\ntesting\\ntesting\\ntesting\\ntesting"}
                     />
                     <Postcard
                         type={"title"}
@@ -33,3 +33,4 @@ class TabletopEducation extends React.Component {
 }
 
 export { TabletopEducation };
+

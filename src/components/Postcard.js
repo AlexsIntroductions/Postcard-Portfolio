@@ -113,6 +113,11 @@ class Postcard extends React.Component {
                 );
             }
             case "list": {
+                //GET THE LIST OF THINGS TO DISPLAY
+                let temp = this.props.contentL;
+                let array = temp.split("\\n").map(function (line) {
+                    return line.split(",");
+                });
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
                         <div ref={this.myRef} className='postcard'
@@ -122,7 +127,9 @@ class Postcard extends React.Component {
                                 transform: 'rotate(' + angle + 'deg)',
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
-                                {this.props.contentL}
+                            <div id='list' onLoad={test()}>
+                                
+                            </div>
                         </div>
                     </CSSTransition>
                 );
