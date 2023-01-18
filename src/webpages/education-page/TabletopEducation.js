@@ -16,11 +16,6 @@ class TabletopEducation extends React.Component {
                         contentR={"Expected Graduation: Spring 2023 | GPA: 2.55"}
                     />
                     <Postcard
-                        type={"list"}
-                        in={false}
-                        contentL={"4\\ntesting\\ntesting\\ntesting\\ntesting"}
-                    />
-                    <Postcard
                         type={"title"}
                         in={false}
                         contentL={"Associate of Arts: Santa Fe Community College"}

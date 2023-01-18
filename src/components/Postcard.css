@@ -69,6 +69,7 @@
 .title{
   color: black;
   font-size: 5vw;
+  white-space: pre-wrap;
 }
 
 .subtitle{

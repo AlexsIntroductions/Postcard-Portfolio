@@ -113,35 +113,20 @@ class Postcard extends React.Component {
                 );
             }
             case "list": {
-                //GET THE LIST OF THINGS TO DISPLAY
-                let temp = this.props.contentL;
-                let array = temp.split("\\n").map(function (line) {
-                    return line.split(",");
-                });
-
-                function test(){
-                    let list = document.getElementById("list");
-                    for(let i = 0; i < parseInt(array[0]); i++){
-                        list.innerHTML += (array[i + 1] + "<br>"); 
-                    }
-                }
-
-                function ass(){
-                    setTimeout(() =>{test()})
-                }
-
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
                         <div ref={this.myRef} className='postcard'
                             style={{
                                 width: height,
                                 height: width,
+                                whiteSpace: "pre-wrap",
                                 transform: 'rotate(' + angle + 'deg)',
+                                flexDirection: 'column',
+                                justifyContent: 'flex-start',
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
-                            <div id='list' onLoad={ass()}>
-                                
-                            </div>
+                            <div className='title' style={{margin: '2vw', marginTop: '5vw'}}>{this.props.contentL}</div>
+                            <div style={{}}>{this.props.contentR}</div>
                         </div>
                     </CSSTransition>
                 );
