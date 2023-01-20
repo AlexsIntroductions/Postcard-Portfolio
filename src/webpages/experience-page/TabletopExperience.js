@@ -15,7 +15,8 @@ class TabletopExperience extends React.Component {
                         in={false}
                         url={""}
                         contentL={"IT Desktop Support: \nUniversity of Florida"}
-                        contentR={"November 2021 - Present"} />
+                        contentR={"November 2021 - Present"}
+                    />
                     <Postcard
                         type={"list"}
                         in={false}
@@ -27,7 +28,14 @@ class TabletopExperience extends React.Component {
                         in={false}
                         url={""}
                         contentL={"Back of House Crew Member: \nChick-fil-A"}
-                        contentR={"October 2020 - October 2021"} />
+                        contentR={"October 2020 - October 2021"}
+                    />
+                    <Postcard
+                        type={"list"}
+                        in={false}
+                        contentL={"RESPONSIBILITIES"}
+                        contentR={"work\nwork\nwork\n"}
+                    />
                 </>
             </>
         );

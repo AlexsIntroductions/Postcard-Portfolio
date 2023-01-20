@@ -134,7 +134,6 @@ class Postcard extends React.Component {
             default: {
                 break;
             }
-
         }
     }
 }

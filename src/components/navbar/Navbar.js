@@ -11,10 +11,26 @@ class Navbar extends React.Component {
                 <header className="my-header">
                     <NamePlate />
                     <div className="header-container">
-                        <Link className="link-style" to="/Home"><PostIt content={"Home"}/></Link>
-                        <Link className="link-style" to="/experience"><PostIt content={"Experience"}/></Link>
-                        <Link className="link-style" to="/education"><PostIt content={"Education"}/></Link>
-                        <Link className="link-style" to="/projects"><PostIt content={"Projects"}/></Link>
+                        <Link onClick={() => {
+                            document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }} className="link-style" to="/Home">
+                            <PostIt content={"Home"} />
+                        </Link>
+                        <Link onClick={() => {
+                            document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }} className="link-style" to="/experience">
+                            <PostIt content={"Experience"} />
+                        </Link>
+                        <Link onClick={() => {
+                            document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }} className="link-style" to="/education">
+                            <PostIt content={"Education"} />
+                        </Link>
+                        <Link onClick={() => {
+                            document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }} className="link-style" to="/projects">
+                            <PostIt content={"Projects"} />
+                        </Link>
                     </div>
                 </header>
                 <main>
