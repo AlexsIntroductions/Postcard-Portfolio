@@ -8,6 +8,22 @@ class TabletopExperience extends React.Component {
     render() {
         return (
             <>
+                <TitleLabel content={"EDUCATION"} />
+                <>
+                    <Postcard
+                        type={"title"}
+                        in={false}
+                        contentL={"Bachelor of Science in Computer Engineering: University of Florida"}
+                        contentR={"Expected Graduation: Spring 2023 | GPA: 2.55"}
+                    />
+                    <Postcard
+                        type={"title"}
+                        in={false}
+                        contentL={"Associate of Arts: Santa Fe Community College"}
+                        contentR={"Completed: April 2020 | GPA: 3.31"}
+                    />
+                </>
+
                 <TitleLabel content={"WORK EXPERIENCE"} />
                 <>
                     <Postcard

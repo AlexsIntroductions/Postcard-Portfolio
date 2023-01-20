@@ -19,12 +19,7 @@ class Navbar extends React.Component {
                         <Link onClick={() => {
                             document.body.scrollTop = document.documentElement.scrollTop = 0;
                         }} className="link-style" to="/experience">
-                            <PostIt content={"Experience"} />
-                        </Link>
-                        <Link onClick={() => {
-                            document.body.scrollTop = document.documentElement.scrollTop = 0;
-                        }} className="link-style" to="/education">
-                            <PostIt content={"Education"} />
+                            <PostIt content={"Education\n&\nExperience"} />
                         </Link>
                         <Link onClick={() => {
                             document.body.scrollTop = document.documentElement.scrollTop = 0;
