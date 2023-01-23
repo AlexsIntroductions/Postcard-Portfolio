@@ -65,7 +65,6 @@
 .postcard-paragraph-split{
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 2.5%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   text-align: left;
 }
@@ -74,6 +73,7 @@
   p.postcard-paragraph-split{
     font-size: x-large;
     line-height: 30px;
+    padding-top: 2.5%;
     padding-bottom: 2.5%;
   }
 }
@@ -81,6 +81,8 @@
 @media screen and (max-width: 600px) {
   p.postcard-paragraph-split{
     font-size: 17px;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 }
 .postcard-divider{
