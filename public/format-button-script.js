@@ -17,3 +17,8 @@ function alignItems() {
         }
     }
 }
+
+setTimeout(() => {
+    window.alert("Scroll Down to Bring More Information into View")
+    
+}, 1000);
