@@ -27,4 +27,3 @@ setTimeout(() => {
     if(window.innerWidth < 600){
     document.getElementsByClassName("base")[0].remove()
 }}, 1);
-
