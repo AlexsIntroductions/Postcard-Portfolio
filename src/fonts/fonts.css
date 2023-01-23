@@ -31,3 +31,18 @@
     font-family: bebas;
     src: url(./Bebas-Regular.ttf);
 }
+
+@font-face {
+    font-family: Chicola-Smoothy;
+    src: url(./Chicola-Smoothy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hello-Cartel-Story-Sans;
+    src: url(./Hello-Cartel-Story-Sans.ttf);
+}
+
+@font-face {
+    font-family: Write-Me-A-Song;
+    src: url(./Please-write-me-a-song.ttf);
+}

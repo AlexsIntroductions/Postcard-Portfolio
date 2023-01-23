@@ -37,7 +37,16 @@ class TabletopExperience extends React.Component {
                         type={"list"}
                         in={false}
                         contentL={"RESPONSIBILITIES"}
-                        contentR={"work\nwork\nwork\n"}
+                        contentR={
+                            "Help Researchers\n"
+                            + "Inspect and Test Dated Hardware for Flaws\n"
+                            + "Install Systems/Parts\n"
+                            + "Replace Systems/Parts\n"
+                            + "Create System Images\n"
+                            + "Maintenance of Legacy Systems\n"
+                            + "Upgrade and Update Systems\n"
+                            + "Abuse Admin Privileges\n"
+                        }
                     />
                     <Postcard
                         type={"title"}

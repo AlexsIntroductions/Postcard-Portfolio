@@ -1,11 +1,12 @@
 .post-it{
     color: black;
+    font-family: 'Chicola-Smoothy';
     width: 7vw;
     min-width: 75px;
     height: 7vw;
     min-height: 75px;
 
-    font-size: 0.95em;
+    font-size: 1em;
     text-align: center;
 
     margin: 1vw;

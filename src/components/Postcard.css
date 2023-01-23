@@ -1,4 +1,5 @@
 .postcard{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -11,6 +12,7 @@
 
 .postcard-container-half{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -37,6 +39,16 @@
   line-height: 30pt;
 }
 
+.postcard-paragraph-split{
+  padding: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  line-height: 30pt;
+}
+
 .postcard-divider{
   transform: rotate(90deg);
   position: absolute;
@@ -46,6 +58,10 @@
 .postcard-picture{
   max-width: 90%;
   max-height: 90%;
+}
+
+.postcard-list{
+  line-height: 2.5em;
 }
 
 .postcard-picture-rotate90{

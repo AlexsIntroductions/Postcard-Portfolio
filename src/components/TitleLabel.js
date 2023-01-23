@@ -5,7 +5,7 @@ import './TitleLabel.css'
 class TitleLabel extends React.Component {
     render() {
         return (
-            <div className='title-font' style={{ fontFamily: "elegant-typewriter" }}>
+            <div className='title-font'>
                 <span style={{width: "fit-content"}}>{this.props.content}</span>
             </div>
         )

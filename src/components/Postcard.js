@@ -73,7 +73,71 @@ class Postcard extends React.Component {
                     </CSSTransition>
                 );
             }
-            case "picture": {
+            case "pictureR": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-container-half'>
+                                <p className='postcard-paragraph'>{this.state.contentL}</p>
+                            </div>
+                            <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
+                            <div className='postcard-container-half'>
+                                <img src={this.state.url} alt="failed" className='postcard-picture' />
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "pictureL": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-container-half'>
+                                <img src={this.state.url} alt="failed" className='postcard-picture' />
+                            </div>
+                            <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
+                            <div className='postcard-container-half postcard-picture-rotate90'>
+                                <p className='postcard-paragraph'>{this.state.contentL}</p>
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "pictureRSplit": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-container-half'>
+                                <p className='postcard-paragraph-split'>{this.state.contentL}</p>
+                                <p className='postcard-paragraph-split'>{this.state.contentR}</p>
+                            </div>
+                            <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
+                            <div className='postcard-container-half postcard-picture-rotate90'>
+                                <img src={this.state.url} alt="failed" className='postcard-picture' />
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "pictureLSplit": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
                         <div ref={this.myRef} className='postcard'
@@ -88,7 +152,8 @@ class Postcard extends React.Component {
                             </div>
                             <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
                             <div className='postcard-container-half'>
-                                <p className='postcard-paragraph'>{this.state.contentL}</p>
+                                <p className='postcard-paragraph-split'>{this.state.contentL}</p>
+                                <p className='postcard-paragraph-split'>{this.state.contentR}</p>
                             </div>
                         </div>
                     </CSSTransition>
@@ -126,7 +191,7 @@ class Postcard extends React.Component {
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
                             <div className='title' style={{margin: '2vw', marginTop: '5vw'}}>{this.props.contentL}</div>
-                            <div style={{}}>{this.props.contentR}</div>
+                            <div className='postcard-list'>{this.props.contentR}</div>
                         </div>
                     </CSSTransition>
                 );

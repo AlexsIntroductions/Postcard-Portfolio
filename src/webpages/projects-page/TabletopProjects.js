@@ -10,7 +10,7 @@ class TabletopProjects extends React.Component {
             <>
                 <TitleLabel content={"PROJECTS"} />
                 <>
-                    <Postcard type={"paragraph"} in={false} url={""} contentL={"YOURE ON THE PROJECTS PAGE NOW"} conetntR={"Welcome"}/>
+                    <Postcard type={"paragraph"} in={false}contentL={"YOURE ON THE PROJECTS PAGE NOW"} conetntR={"Welcome"}/>
                 </>
             </>
         );
