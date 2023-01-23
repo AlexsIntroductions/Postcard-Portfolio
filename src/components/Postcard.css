@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 600px) {
   p.postcard-paragraph{
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 600px) {
   p.postcard-paragraph-split{
-    font-size: 17px;
+    font-size: 14px;
     padding-top: 7%;
     padding-bottom: 7%;
   }
@@ -110,7 +110,7 @@
 
 @media screen and (max-width: 600px) {
   div.postcard-list{
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2em;
   }
 }
