@@ -63,7 +63,8 @@
 }
 
 .postcard-paragraph-split{
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 2.5%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   text-align: left;
