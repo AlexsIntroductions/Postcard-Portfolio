@@ -16,7 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   background-image: url(./images/Tabletop.jpg);
-  background-size: cover;
+  background-size: contain;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

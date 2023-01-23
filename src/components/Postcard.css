@@ -18,6 +18,18 @@
   width: 50%;
 }
 
+@media screen and (min-width: 601px) {
+  p.postcard-container-half{
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-container-half{
+    font-size: 10px;
+  }
+}
 .postcard-container-full{
   display: flex;
   align-items: center;
@@ -34,9 +46,20 @@
 .postcard-paragraph{
   padding: 10%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: x-large;
   text-align: left;
-  line-height: 30pt;
+}
+
+@media screen and (min-width: 601px) {
+  p.postcard-paragraph{
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-paragraph{
+    font-size: 17px;
+  }
 }
 
 .postcard-paragraph-split{
@@ -44,11 +67,21 @@
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: x-large;
   text-align: left;
-  line-height: 30pt;
 }
 
+@media screen and (min-width: 601px) {
+  p.postcard-paragraph-split{
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-paragraph-split{
+    font-size: 17px;
+  }
+}
 .postcard-divider{
   transform: rotate(90deg);
   position: absolute;
@@ -61,9 +94,22 @@
 }
 
 .postcard-list{
-  line-height: 2.5em;
+  padding-left: 5%;
 }
 
+@media screen and (min-width: 601px) {
+  div.postcard-list{
+    font-size: x-large;
+    line-height: 2.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.postcard-list{
+    font-size: 12px;
+    line-height: 2em;
+  }
+}
 .postcard-picture-rotate90{
   transform: rotate(90deg);
 }

@@ -25,7 +25,7 @@ class TabletopHome extends React.Component {
                         in={false}
                         url={uf}
                         contentL={"Welcome to my Postcard Portfolio!"}
-                        contentR={"I'm a Computer Engineering student from the University of Florida. I'm expected to graduate Spring 2023 and have been keeping myself busy with several personal projects, this website being one of them."}
+                        contentR={"I'm a Computer Engineering student from the University of Florida."}
                     />
                     <Postcard
                         type={"paragraph"}
