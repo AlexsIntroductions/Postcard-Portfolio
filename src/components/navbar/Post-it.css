@@ -6,6 +6,7 @@
     min-height: 75px;
 
     font-size: 0.95em;
+    text-align: center;
 
     margin: 1vw;
     margin-top: 5vw;
@@ -15,5 +16,6 @@
     justify-content: center;
 
     text-decoration: none;
-    overflow: visible;
+    overflow: visible; 
+    white-space: pre-wrap;
 }
