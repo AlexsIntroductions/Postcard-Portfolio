@@ -12,9 +12,7 @@ class List extends React.Component {
             <li className="list-element" key={val.key}>{val.data}</li>
         ));
         return (
-            <div className='postcard-list' ref={this.selfRef}>
-                {elements}
-            </div>
+            <div className='postcard-list'>{elements}</div>
         );
     }
 }
