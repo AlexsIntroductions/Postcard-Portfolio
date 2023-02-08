@@ -38,14 +38,13 @@ class TabletopExperience extends React.Component {
                         in={false}
                         contentL={"RESPONSIBILITIES"}
                         contentR={
-                            "Help Researchers\n"
-                            + "Inspect and Test Dated Hardware for Flaws\n"
-                            + "Install Systems/Parts\n"
-                            + "Replace Systems/Parts\n"
-                            + "Create System Images\n"
-                            + "Maintenance of Legacy Systems\n"
-                            + "Upgrade and Update Systems\n"
-                            + "Abuse Admin Privileges\n"
+                            "Assist researchers in technical problems in a timely manor," +
+                            "Inspect incoming hardware for flaws and install software to researchers requests," +
+                            "Analyze in-place systems for unoptimizations regarding setup and outdated hardware or software," + 
+                            "Manage ticketing system for IT requests in a timely manor,"  + 
+                            "Manage building data server to ensure enough space for researchers needs," +
+                            "Manage and update system images for quick deployment," +
+                            "Communicate with researchers about feasibility of requests and fulfil them"
                         }
                     />
                     <Postcard

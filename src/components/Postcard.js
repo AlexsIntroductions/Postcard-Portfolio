@@ -1,6 +1,7 @@
 import React from 'react';
 import { CSSTransition } from "react-transition-group";
 import './Postcard.css';
+import {List} from './List'
 
 class Postcard extends React.Component {
     constructor(props) {
@@ -191,7 +192,7 @@ class Postcard extends React.Component {
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
                             <div className='title' style={{margin: '2vw', marginTop: '5vw'}}>{this.props.contentL}</div>
-                            <div className='postcard-list'>{this.props.contentR}</div>
+                            <List content={this.props.contentR}></List>
                         </div>
                     </CSSTransition>
                 );

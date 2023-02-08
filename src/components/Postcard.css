@@ -97,23 +97,6 @@
   max-height: 90%;
 }
 
-.postcard-list{
-  padding-left: 5%;
-}
-
-@media screen and (min-width: 601px) {
-  div.postcard-list{
-    font-size: x-large;
-    line-height: 2.5em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.postcard-list{
-    font-size: 14px;
-    line-height: 2em;
-  }
-}
 .postcard-picture-rotate90{
   transform: rotate(90deg);
 }
