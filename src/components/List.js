@@ -9,10 +9,7 @@ class List extends React.Component {
             temp[i] = { key: parseInt(i + 1), data: test[i] };
         }
         const elements = temp.map((val) => (
-            <>
-                <hr></hr>
-                <div className="list-element" key={val.key}>{val.data}</div>
-            </>
+            <li className="list-element" key={val.key}>{val.data}</li>
         ));
         return (
             <div className='postcard-list' ref={this.selfRef}>

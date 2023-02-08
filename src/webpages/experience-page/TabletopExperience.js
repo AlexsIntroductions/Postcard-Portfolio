@@ -40,8 +40,8 @@ class TabletopExperience extends React.Component {
                         contentR={
                             "Assist researchers in technical problems in a timely manor," +
                             "Inspect incoming hardware for flaws and install software to researchers requests," +
-                            "Analyze in-place systems for unoptimizations regarding setup and outdated hardware or software," + 
-                            "Manage ticketing system for IT requests in a timely manor,"  + 
+                            "Analyze in-place systems for unoptimizations regarding setup and outdated hardware or software," +
+                            "Manage ticketing system for IT requests in a timely manor," +
                             "Manage building data server to ensure enough space for researchers needs," +
                             "Manage and update system images for quick deployment," +
                             "Communicate with researchers about feasibility of requests and fulfil them"
@@ -58,7 +58,14 @@ class TabletopExperience extends React.Component {
                         type={"list"}
                         in={false}
                         contentL={"RESPONSIBILITIES"}
-                        contentR={"work\nwork\nwork\n"}
+                        contentR={
+                            "Communicate with all stations to ensure the kitchen is running efficiently," +
+                            "Boost team morale through encouragement and mentorship while assisting if falling behind," +
+                            "Troubleshoot various Henny Penny brand machines and legacy ticketing system," +
+                            "Document stock and report to managers over current supply," +
+                            "Maintain a properly cleaned and sanitized environment and workstation," +
+                            "Follow proper closing procedures to maintain store cleanliness for opening crew"
+                        }
                     />
                 </>
             </>

@@ -179,6 +179,9 @@ class Postcard extends React.Component {
                 );
             }
             case "list": {
+                if(width < 500){
+                    height *= 1.2;
+                }
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
                         <div ref={this.myRef} className='postcard'
