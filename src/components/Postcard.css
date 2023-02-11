@@ -97,6 +97,36 @@
   max-height: 90%;
 }
 
+.postcard-description-title{
+  font-size: 7vw;
+}
+
+.postcard-description{
+  font-size: 24px;
+}
+
+@media screen and (min-width: 601px) {
+  span.postcard-description{
+    font-size: 24px;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  span.postcard-description{
+    font-size: 48px;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  span.postcard-description{
+    font-size: 12px;
+    padding: 7%;
+    padding-top: 2%;
+  }
+}
+
 .postcard-picture-rotate90{
   transform: rotate(90deg);
 }

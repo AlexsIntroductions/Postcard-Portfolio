@@ -160,6 +160,27 @@ class Postcard extends React.Component {
                     </CSSTransition>
                 );
             }
+            case "pictureRList": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-container-half'>
+                                <List className='postcard-paragraph' type={"picture"} content={this.state.contentL}/>
+                            </div>
+                            <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
+                            <div className='postcard-container-half postcard-picture-rotate90'>
+                                <img src={this.state.url} alt="failed" className='postcard-picture' />
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
             case "title": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
@@ -195,7 +216,26 @@ class Postcard extends React.Component {
                                 backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
                             }}>
                             <div className='title' style={{margin: '2vw', marginTop: '5vw'}}>{this.props.contentL}</div>
-                            <List content={this.props.contentR}></List>
+                            <List type={"postcard"} content={this.props.contentR}></List>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "description": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-column'>
+                                <span className='postcard-description-title'>{this.props.contentL}</span>
+                                <hr style={{width: "80%", padding: "0", marginTop: "0", marginBottom: "0"}}></hr>
+                                <span className='postcard-description'>{this.props.contentR}</span>
+                            </div>
                         </div>
                     </CSSTransition>
                 );
