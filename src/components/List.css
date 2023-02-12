@@ -43,7 +43,7 @@
 /*PICTURE*/
 @media screen and (min-width: 601px) {
     div.postcard-list-picture {
-        font-size: 1.25vw;
+        font-size: 2vw;
     }
 
     li.list-element-picture {
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 600px) {
     div.postcard-list-picture {
-        font-size: 1.4vw;
+        font-size: 2vw;
     }
     li.list-element-picture {
         padding-top: 1%;
