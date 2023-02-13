@@ -74,6 +74,7 @@ class TabletopExperience extends React.Component {
                 <>
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Undergraduate Research Assistant"}
                         contentR={
                             "Assisting PhD Student Joseph Isaac in his dissertation of creating a paradigm for teaching black youth computer science concepts titled \"Black Boy Joy\". " +
@@ -84,6 +85,7 @@ class TabletopExperience extends React.Component {
                     />
                     <Postcard 
                         type={"description"}
+                        in={false}
                         contentL={"GRiP: ExoGlove"}
                         contentR={
                             "GRiP, or General Relief in Prosthetics, is an organization dedicated to teach students computer and material sciences through helping members of their community by creating prosthetics for those in need. " +

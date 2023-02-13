@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { TabletopExperience } from './webpages/experience-page/TabletopExperience';
 import { TabletopHome } from './webpages/home-page/TabletopHome';
 import { TabletopProjects } from './webpages/projects-page/TabletopProjects';
+import { TabletopContact } from './webpages/contact-page/TabletopContact';
+
 import './index.css';
 import { Navbar } from './components/navbar/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -16,6 +18,7 @@ root.render(
                     <Route path='home' element={<TabletopHome />} />
                     <Route path="experience" element={<TabletopExperience />} />
                     <Route path="projects" element={<TabletopProjects />} />
+                    <Route path="contact" element={<TabletopContact />} />
                 </Route>
             </Routes>
         </BrowserRouter>

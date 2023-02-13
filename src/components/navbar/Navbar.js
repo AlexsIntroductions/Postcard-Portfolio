@@ -13,7 +13,7 @@ class Navbar extends React.Component {
                     <div className="header-container">
                         <Link onClick={() => {
                             document.body.scrollTop = document.documentElement.scrollTop = 0;
-                        }} className="link-style" to="/Home">
+                        }} className="link-style" to="/home">
                             <PostIt content={"Home"} />
                         </Link>
                         <Link onClick={() => {
@@ -25,6 +25,11 @@ class Navbar extends React.Component {
                             document.body.scrollTop = document.documentElement.scrollTop = 0;
                         }} className="link-style" to="/projects">
                             <PostIt content={"Projects"} />
+                        </Link>
+                        <Link onClick={() => {
+                            document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        }} className="link-style" to="/contact">
+                            <PostIt content={"Contact Me"} />
                         </Link>
                     </div>
                 </header>

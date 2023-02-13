@@ -26,6 +26,7 @@ class TabletopProjects extends React.Component {
                 <>
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Postcard Portfolio"}
                         contentR={
                             "Development of my own portfolio website, " +
@@ -34,6 +35,7 @@ class TabletopProjects extends React.Component {
                         } />
                     <Postcard
                         type={"pictureRList"}
+                        in={false}
                         url={uf}
                         contentL={
                             "Duration: Jan 03, 2023 - Feb 11, 2023|" +
@@ -46,6 +48,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Cellular Automaton"}
                         contentR={
                             "Development of a cellular automaton with user modifiable state machine settings to create unique results when ran. " +
@@ -55,6 +58,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: June 9, 2022 - Sept 19, 2022|" +
@@ -67,6 +71,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Boids Simulation"}
                         contentR={
                             "This project created a web simulation of a boid type AI. " +
@@ -76,6 +81,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureRList"}
+                        in={false}
                         url={uf}
                         contentL={
                             "Duration: June 9, 2022 - June 28, 2022|" +
@@ -87,6 +93,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Minesweeper"}
                         contentR={
                             "For one of my classes, our final project was to create Minesweeper from scratch and this was my final result. " +
@@ -98,6 +105,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: July 25, 2020 - Aug 9, 2020|" +
@@ -110,6 +118,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"3-Axis Robotic Arm"}
                         contentR={
                             "One of my first Arduino Projects. " +
@@ -119,6 +128,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureRList"}
+                        in={false}
                         url={uf}
                         contentL={
                             "Duration: Sept 21, 2022|" +
@@ -132,6 +142,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Homemade Monitor"}
                         contentR={
                             "Creation of a monitor for my home workstation from recycled parts. " +
@@ -143,6 +154,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: An Afternoon|" +
@@ -156,6 +168,7 @@ class TabletopProjects extends React.Component {
                 <>
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Minesweeper AI"}
                         contentR={
                             "For one of my classes, our final project was to create Minesweeper from scratch. " +
@@ -167,6 +180,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureRList"}
+                        in={false}
                         url={uf}
                         contentL={
                             "Duration: Dec 23, 2023 - Present|" +
@@ -179,6 +193,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Rubix Cube Solver"}
                         contentR={
                             "As an introductory to graphics programming, I wanted to create a 3-D rubix cube solver where you could input a valid cube arrangement and get steps to solve it using an AI of my own design. " +
@@ -188,6 +203,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: Jan 26, 2023 - Present|" +
@@ -202,6 +218,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Stack Overflow Content Widening Chrome Extension"}
                         contentR={
                             "At my home workstation I have a vertical monitor for easy reading of documentation and web browsing. " +
@@ -211,6 +228,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureRList"}
+                        in={false}
                         url={uf}
                         contentL={
                             "Duration: Dec 22, 2022 - Present|" +
@@ -223,6 +241,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Chaos Game"}
                         contentR={
                             "A Chaos Game is a mathematical method to create fractals from a shape by calculated placement of points within the shapes perimeter. " +
@@ -232,6 +251,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: Sept 14, 2022 - Present|" +
@@ -244,6 +264,7 @@ class TabletopProjects extends React.Component {
 
                     <Postcard
                         type={"description"}
+                        in={false}
                         contentL={"Camera Filter"}
                         contentR={
                             "An OpenCV project revolving around manipulating video frames in real time. " +
@@ -253,6 +274,7 @@ class TabletopProjects extends React.Component {
                     />
                     <Postcard
                         type={"pictureLList"}
+                        in={false}
                         url={uf}
                         contentR={
                             "Duration: Nov 11, 2022 - Present|" +
@@ -267,6 +289,7 @@ class TabletopProjects extends React.Component {
                 <>
                     <Postcard
                         type={"bigLink"}
+                        in={false}
                         contentL={"GitHub Link:"}
                         link={"https://github.com/AlexsIntroductions"}
                     />
