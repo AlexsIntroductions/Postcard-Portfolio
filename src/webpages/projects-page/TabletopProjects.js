@@ -6,36 +6,9 @@ import uf from '../../images/ufgator.jpg'
 
 /*
 Projects Completed:
-    Postcard Portfolio
-        Languages: HTML, CSS, JS
-        Frameworlks: React, Create-React-App
-        Libraries: React Transitition Group, React Router, Bootstrap 4
-    Cellular Automaton
-        Langauges: HTML, CSS, JS
-        Frameworks: JQuery, Bootstrap 4
-    Boids
-        Langauges: HTML, CSS, JS
-        Libraries: JQuery, Bootstrap 4
-    Minesweeper
-        Languages: C++
-        Frameworks/Libraries: SFML
     PS2 Controlled 3-Axis robotic arm
         Languages: Arduino/C++
         Frameworks: PS2lib
-Projects In Progress
-    Rubix Cube Solver : Going to migrate to Unreal Engine for more applicable graphics programming experience
-        Languages: HTML, CSS, JS
-        Frameworks: three.js, create-react-app
-        have not found a way to copy custom objects without reference in JS so I Plan to migrate to Unreal Engine as an introductory project to the program.
-    Stack-Overflow-Content-Widener
-        Languages: HTML, CSS, JS
-        Frameworks: Chrome-Extension
-    Minesweeper AI / Minesweeper Refactored
-        Languages: C++
-        Frameworks: SFML
-    Camera Filter:
-        Languages: C++
-        Frameworks: OpenCV
 */
 
 class TabletopProjects extends React.Component {
@@ -112,6 +85,50 @@ class TabletopProjects extends React.Component {
                     />
 
 
+                    <Postcard
+                        type={"description"}
+                        contentL={"Minesweeper"}
+                        contentR={
+                            "For one of my classes, our final project was to create Minesweeper from scratch and this was my final result. " +
+                            "For graphics we were required to use SFML, a low level 2-D graphics library which was capable of displaying the 2-D sprites we needed. " +
+                            "The engine was created from scratch, along with all classes and data flow required to have a fully functioning version of MineSweeper. " +
+                            "Because this was early on in my coding career the code is unoptimized and very unorganized, " +
+                            "I have future plans to rework this project and create an AI which is detailed further down in my In-Progress Projects section. "
+                        }
+                    />
+                    <Postcard
+                        type={"pictureLList"}
+                        url={uf}
+                        contentR={
+                            "Duration: July 25, 2020 - Aug 9, 2020|" +
+                            "Languages: C++|" +
+                            "Libraries: SFML"
+                        }
+                    />
+
+
+
+                    <Postcard
+                        type={"description"}
+                        contentL={"3-Axis Robotic Arm"}
+                        contentR={
+                            "One of my first Arduino Projects. " +
+                            "I found a schematic for getting output from a PlayStation 2 (PS2) controller's pins and tried to connect them to a microcontroller to be used to control servos. " +
+                            "I found an arduino library which allowed the PS2 controller's inputs to be read with an Arduino and wired up a 3-Axis arm using 3 servos to be controlled using it. "
+                        }
+                    />
+                    <Postcard
+                        type={"pictureRList"}
+                        url={uf}
+                        contentL={
+                            "Duration: Sept 21, 2022|" +
+                            "Languages: Arduino/C++|" +
+                            "Arduino Libraries: Servo.h|" +
+                            "Hardware: Arduino, Low Voltage Servo Motors, PlayStation 2 Controller"
+                        }
+                    />
+
+
 
                     <Postcard
                         type={"description"}
@@ -125,9 +142,9 @@ class TabletopProjects extends React.Component {
                         }
                     />
                     <Postcard
-                        type={"pictureRList"}
+                        type={"pictureLList"}
                         url={uf}
-                        contentL={
+                        contentR={
                             "Duration: An Afternoon|" +
                             "Languages: en-us|" +
                             "Frameworks: Cardboard, Scotch Tape|" +
@@ -157,6 +174,50 @@ class TabletopProjects extends React.Component {
                             "Duration: Dec 23, 2023 - Present|" +
                             "Languages: C++, MatLab|" +
                             "Libraries: SFML"
+                        }
+                    />
+
+
+
+                    <Postcard
+                        type={"description"}
+                        contentL={"Rubix Cube Solver"}
+                        contentR={
+                            "As an introductory to graphics programming, I wanted to create a 3-D rubix cube solver where you could input a valid cube arrangement and get steps to solve it using an AI of my own design. " +
+                            "I currently use Three.js as a rendering library however I'm having a problem with JavaScript: I havent found a way to copy custom objects without reference to the original object. " +
+                            "Because of this, I plan on converting this project to Unreal Engine 5 to serve as an introductory project for the software and I will be able to use C++, which has the functionality I need compared to JavaScript."
+                        }
+                    />
+                    <Postcard
+                        type={"pictureLList"}
+                        url={uf}
+                        contentR={
+                            "Duration: Jan 26, 2023 - Present|" +
+                            "Languages: HTML, CSS, JavaScript|" +
+                            "Libraries: Three.js, React|" +
+                            "Future Languages: C++|" +
+                            "Future Framework: Unreal Engine 5"
+                        }
+                    />
+
+
+
+                    <Postcard
+                        type={"description"}
+                        contentL={"Stack Overflow Content Widening Chrome Extension"}
+                        contentR={
+                            "At my home workstation I have a vertical monitor for easy reading of documentation and web browsing. " +
+                            "In my experience using it, the main content on Stack-Overflow on chrome has two side bars which make the content annoying to read. " +
+                            "To solve this problem I began to develop a chrome extension specifically for this: to remove the side element on the click of a button for easier readability on the website's main content. "
+                        }
+                    />
+                    <Postcard
+                        type={"pictureRList"}
+                        url={uf}
+                        contentL={
+                            "Duration: Dec 22, 2022 - Present|" +
+                            "Languages: HTML, CSS, JavaScript|" +
+                            "API: Chrome Extension API"
                         }
                     />
 
@@ -206,7 +267,7 @@ class TabletopProjects extends React.Component {
                 </>
                 <TitleLabel content={"GITHUB"} />
                 <>
-                    <Postcard 
+                    <Postcard
                         type={"bigLink"}
                         contentL={"GitHub Link:"}
                         link={"https://github.com/AlexsIntroductions"}
