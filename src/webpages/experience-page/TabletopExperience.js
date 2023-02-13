@@ -77,7 +77,7 @@ class TabletopExperience extends React.Component {
                         in={false}
                         contentL={"Undergraduate Research Assistant"}
                         contentR={
-                            "Assisting PhD Student Joseph Isaac in his dissertation of creating a paradigm for teaching black youth computer science concepts titled \"Black Boy Joy\". " +
+                            "Assisting PhD candidate Joseph Isaac in his dissertation of creating a paradigm for teaching black youth computer science concepts titled \"Black Boy Joy\". " +
                             "My role is as an educator, Joesph is in charge of teaching the lessons and present activities for the students to do. " +
                             "While the students are doing activities it is my job to help the students when they get stuck, or teach them if they are unsure of what to do. " +
                             "I am also expected to gather data on students progress and log it daily for each group we teach."
