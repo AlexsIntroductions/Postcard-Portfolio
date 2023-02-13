@@ -26,6 +26,7 @@ Projects In Progress
     Rubix Cube Solver : Going to migrate to Unreal Engine for more applicable graphics programming experience
         Languages: HTML, CSS, JS
         Frameworks: three.js, create-react-app
+        have not found a way to copy custom objects without reference in JS so I Plan to migrate to Unreal Engine as an introductory project to the program.
     Stack-Overflow-Content-Widener
         Languages: HTML, CSS, JS
         Frameworks: Chrome-Extension
@@ -146,7 +147,7 @@ class TabletopProjects extends React.Component {
                             "Becasue this was early in my coding career, the code is very unoptimized. " +
                             "My plans are to refactor the code and create an AI over it which will be able to solve the board. " +
                             "The AI will use data I collect to find the safest tiles to start on and ones which result in the greatest reveal of tiles upon click. " +
-                            "I plan on collecting the data using the engine I build after refactoring for analysis to create an efficient AI."
+                            "I plan on collecting the data using the engine I build after for analysis with a MatLab Script to create an efficient AI."
                         }
                     />
                     <Postcard
@@ -154,7 +155,7 @@ class TabletopProjects extends React.Component {
                         url={uf}
                         contentL={
                             "Duration: Dec 23, 2023 - Present|" +
-                            "Languages: C++|" +
+                            "Languages: C++, MatLab|" +
                             "Libraries: SFML"
                         }
                     />
@@ -202,6 +203,14 @@ class TabletopProjects extends React.Component {
                     />
 
 
+                </>
+                <TitleLabel content={"GITHUB"} />
+                <>
+                    <Postcard 
+                        type={"bigLink"}
+                        contentL={"GitHub Link:"}
+                        link={"https://github.com/AlexsIntroductions"}
+                    />
                 </>
             </>
         );
