@@ -152,8 +152,6 @@ class TabletopProjects extends React.Component {
                         }
                     />
                 </>
-
-
                 <TitleLabel content={"IN-PROGRESS PROJECTS"} />
                 <>
                     <Postcard
