@@ -70,6 +70,24 @@ class TabletopExperience extends React.Component {
                         }
                     />
                 </>
+                <TitleLabel content={"EXTRA-CURRICULARS"} />
+                <>
+                    <Postcard
+                        type={"description"}
+                        contentL={"Undergrad Research Assistant: Black Boy Joy"}
+                        contentR={
+                            "Assisting PhD Student Joseph Isaac in his dissertation of creating a paradigm for teaching black youth computer science concepts. " +
+                            ""
+                        }
+                    />
+                    <Postcard 
+                        type={"description"}
+                        contentL={"GRiP: ExoGlove"}
+                        contentR={
+                            ""
+                        }
+                    />
+                </>
             </>
         );
     }

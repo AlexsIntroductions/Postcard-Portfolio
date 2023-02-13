@@ -114,8 +114,8 @@
 
 @media screen and (min-width: 1280px) {
   span.postcard-description{
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 55px;
     padding: 5%;
   }
 }
@@ -126,6 +126,12 @@
     padding: 7%;
     padding-top: 2%;
   }
+}
+
+.postcard-link{
+  max-width: fit-content;
+  font-size: 4vw;
+  text-decoration: none;
 }
 
 .postcard-picture-rotate90{
