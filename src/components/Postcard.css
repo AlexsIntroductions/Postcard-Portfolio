@@ -18,6 +18,18 @@
   width: 50%;
 }
 
+@media screen and (min-width: 601px) {
+  p.postcard-container-half{
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-container-half{
+    font-size: 10px;
+  }
+}
 .postcard-container-full{
   display: flex;
   align-items: center;
@@ -34,21 +46,46 @@
 .postcard-paragraph{
   padding: 10%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: x-large;
   text-align: left;
-  line-height: 30pt;
+}
+
+@media screen and (min-width: 601px) {
+  p.postcard-paragraph{
+    font-size: x-large;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-paragraph{
+    font-size: 14px;
+  }
 }
 
 .postcard-paragraph-split{
-  padding: 10%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: x-large;
   text-align: left;
-  line-height: 30pt;
+  margin: 0;
 }
 
+@media screen and (min-width: 601px) {
+  p.postcard-paragraph-split{
+    font-size: x-large;
+    line-height: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.postcard-paragraph-split{
+    font-size: 14px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}
 .postcard-divider{
   transform: rotate(90deg);
   position: absolute;
@@ -60,8 +97,41 @@
   max-height: 90%;
 }
 
-.postcard-list{
-  line-height: 2.5em;
+.postcard-description-title{
+  font-size: 7vw;
+}
+
+.postcard-description{
+  font-size: 24px;
+}
+
+@media screen and (min-width: 601px) {
+  span.postcard-description{
+    font-size: 24px;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  span.postcard-description{
+    font-size: 40px;
+    line-height: 55px;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  span.postcard-description{
+    font-size: 10px;
+    padding: 7%;
+    padding-top: 2%;
+  }
+}
+
+.postcard-link{
+  max-width: fit-content;
+  font-size: 4vw;
+  text-decoration: none;
 }
 
 .postcard-picture-rotate90{
