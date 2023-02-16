@@ -4,15 +4,7 @@ import { TitleLabel } from '../../components/TitleLabel';
 import './TabletopProjects.css'
 import uf from '../../images/ufgator.jpg'
 
-/*
-Projects Completed:
-    PS2 Controlled 3-Axis robotic arm
-        Languages: Arduino/C++
-        Frameworks: PS2lib
-*/
-
 class TabletopProjects extends React.Component {
-
     /*
     Project Display Template:
         Title

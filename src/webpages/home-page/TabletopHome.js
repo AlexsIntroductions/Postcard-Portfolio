@@ -14,9 +14,9 @@ class TabletopHome extends React.Component {
                     <Postcard
                         type={"pictureLSplit"}
                         in={false}
-                        url={me}
+                        url={uf}
                         contentL={"*welcoming introduction*"}
-                        contentR={"*short description of website*"}
+                        contentR={"*short description of website/myself*"}
                     />
                     <Postcard 
                         type={"description"}

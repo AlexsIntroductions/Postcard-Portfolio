@@ -282,7 +282,6 @@ class Postcard extends React.Component {
                     </CSSTransition>
                 );
             }
-            
             case "bigLink": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
@@ -297,6 +296,48 @@ class Postcard extends React.Component {
                                 <span className='postcard-description-title'>{this.props.contentL}</span>
                                 <hr style={{width: "80%", padding: "0", marginTop: "0", marginBottom: "0"}}></hr>
                                 <a className='postcard-link' href={this.props.link}>{this.props.link}</a>
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "smallLink": {
+                width = width * 0.75;
+                height = height * 0.75;
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-column'>
+                                <span className='postcard-description-title'>{this.props.contentL}</span>
+                                <hr style={{width: "80%", padding: "0", marginTop: "0", marginBottom: "0"}}></hr>
+                                <a className='postcard-link' href={this.props.link}>{this.props.link}</a>
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
+            case "smallCard": {
+                width = width * 0.75;
+                height = height * 0.75;
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-column'>
+                                <span className='postcard-description-title'>{this.props.contentL}</span>
+                                <hr style={{width: "80%", padding: "0", marginTop: "0", marginBottom: "0"}}></hr>
+                                <span className='postcard-link'>{this.props.contentR}</span>
                             </div>
                         </div>
                     </CSSTransition>

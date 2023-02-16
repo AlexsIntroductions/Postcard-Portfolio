@@ -11,25 +11,31 @@ class TabletopContact extends React.Component {
                 <TitleLabel content={"CONTACT ME"} />
                 <>
                     <Postcard
-                        type={"bigLink"}
+                        type={"smallCard"}
                         in={false}
                         contentL={"Personal Email"}
-                        link={"alexprokoplpa@gmail.com"}
+                        contentR={"alexprokoplpa@gmail.com"}
                     />
                     <Postcard
-                        type={"bigLink"}
+                        type={"smallCard"}
+                        in={false}
+                        contentL={"Phone Number"}
+                        contentR={"772-353-0028"}
+                    />
+                    <Postcard
+                        type={"smallCard"}
                         in={false}
                         contentL={"Work Email"}
-                        link={"alexanderprokop@ufl.edu"}
+                        contentR={"alexanderprokop@ufl.edu"}
                     />
                     <Postcard
-                        type={"bigLink"}
+                        type={"smallLink"}
                         in={false}
                         contentL={"LinkedIn"}
                         link={"https://www.linkedin.com/in/alexander-prokop/"}
                     />
                     <Postcard
-                        type={"bigLink"}
+                        type={"smallLink"}
                         in={false}
                         contentL={"GitHub"}
                         link={"https://github.com/AlexsIntroductions"}
