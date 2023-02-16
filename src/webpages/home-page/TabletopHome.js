@@ -6,7 +6,6 @@ import uf from '../../images/ufgator.jpg'
 import './TabletopHome.css'
 
 class TabletopHome extends React.Component {
-
     render() {
         return (
             <>
@@ -16,26 +15,30 @@ class TabletopHome extends React.Component {
                         type={"pictureLSplit"}
                         in={false}
                         url={me}
-                        contentL={"Hello! My name is Alexander Prokop"}
-                        contentR={"Scroll down and I'll throw down more postcards about me!"}
+                        contentL={"*welcoming introduction*"}
+                        contentR={"*short description of website*"}
                     />
-                    <Postcard
-                        type={"pictureRSplit"}
+                    <Postcard 
+                        type={"description"}
                         in={false}
-                        url={uf}
-                        contentL={"Welcome to my Postcard Portfolio!"}
-                        contentR={"I'm a Computer Engineering student from the University of Florida."}
+                        contentL={"About Me"}
+                        contentR={
+                            "I am a Senior Computer Engineering Student at the University of Florida. " +
+                            "I'm interested in almost all aspects of Programming and have been exploring many avenues to find the direction I'd like to specialize in. " +
+                            "I built this website to explore UX/UI design using React, and I have future projects to explore server side programming, data science and analysis, machine learning, and AI; All of which are showcased in my projects page! " +
+                            "*something about school*" +
+                            "*extension of my career goals*"
+                        }
                     />
                     <Postcard
                         type={"paragraph"}
                         in={false}
-                        contentL={"Click on the Align Postcards button to line up the postcards in a more readable way"}
-                        contentR={"Feel free to click on the Post-it notes at the top to learn more about me and my endeavors!"}
+                        contentL={""}
+                        contentR={""}
                     />
                 </>
             </>
         );
     }
 }
-
 export { TabletopHome };

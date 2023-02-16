@@ -13,6 +13,18 @@ class TabletopContact extends React.Component {
                     <Postcard
                         type={"bigLink"}
                         in={false}
+                        contentL={"Personal Email"}
+                        link={"alexprokoplpa@gmail.com"}
+                    />
+                    <Postcard
+                        type={"bigLink"}
+                        in={false}
+                        contentL={"Work Email"}
+                        link={"alexanderprokop@ufl.edu"}
+                    />
+                    <Postcard
+                        type={"bigLink"}
+                        in={false}
                         contentL={"LinkedIn"}
                         link={"https://www.linkedin.com/in/alexander-prokop/"}
                     />

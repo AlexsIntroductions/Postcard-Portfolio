@@ -282,8 +282,6 @@ class TabletopProjects extends React.Component {
                             "Libraries: OpenCV"
                         }
                     />
-
-
                 </>
                 <TitleLabel content={"GITHUB"} />
                 <>
