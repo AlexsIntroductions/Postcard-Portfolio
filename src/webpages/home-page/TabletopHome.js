@@ -1,7 +1,6 @@
 import React from 'react';
 import { Postcard } from '../../components/Postcard';
 import { TitleLabel } from '../../components/TitleLabel';
-import me from '../../images/me.jpg'
 import uf from '../../images/ufgator.jpg'
 import './TabletopHome.css'
 
