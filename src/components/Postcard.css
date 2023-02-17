@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 600px) {
   p.postcard-paragraph{
-    font-size: 14px;
+    font-size: 8px;
   }
 }
 
@@ -114,8 +114,8 @@
 
 @media screen and (min-width: 1280px) {
   span.postcard-description{
-    font-size: 40px;
-    line-height: 55px;
+    font-size: 36px;
+    line-height: 44px;
     padding: 5%;
   }
 }

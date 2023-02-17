@@ -20,7 +20,7 @@ class TabletopContact extends React.Component {
                         type={"smallCard"}
                         in={false}
                         contentL={"Phone Number"}
-                        contentR={"772-353-0028"}
+                        contentR={"(772)353-0028"}
                     />
                     <Postcard
                         type={"smallCard"}
