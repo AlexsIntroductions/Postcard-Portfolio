@@ -32,7 +32,7 @@ class TabletopHome extends React.Component {
                         in={false}
                         contentL={
                             "My goals for my career are to become a roboticist and work in the prosthetics field. " +
-                            "Most of my robotics experience involves Arduino and the Raspberry PI and have some of my robotics related projects in my projects page. " +
+                            "Most of my robotics experience involves Arduino and the Raspberry PI and I have some of my robotics related projects in my projects page. " +
                             "I'm also currently a part of a prosthetics club at my university detailed in my education page. "
                         }
                         contentR={
