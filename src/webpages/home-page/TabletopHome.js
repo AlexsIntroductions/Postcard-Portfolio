@@ -37,7 +37,7 @@ class TabletopHome extends React.Component {
                         }
                         contentR={
                             "Until I gain the experience to fulfil that, I plan to dedicate my time to computer engineering research at the University of Florida." +
-                            "Currently I am a part of a research project dedicated to making a curriculum for black youth where I am an educator/tutor. I detailed my experience in my education page!"
+                            "Currently I am a part of a research project and I have detailed my experience in my education page!"
                         }
                     />
                 </>
