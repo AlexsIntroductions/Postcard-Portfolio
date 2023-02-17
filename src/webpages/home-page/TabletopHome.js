@@ -26,7 +26,7 @@ class TabletopHome extends React.Component {
                             "I am a Senior Computer Engineering Student at the University of Florida. " +
                             "I'm interested in almost all aspects of Programming and have been exploring many avenues to find the direction I'd like to specialize in. " +
                             "I built this website to explore UX/UI design using React, and I have future projects to explore server side programming, data science and analysis, machine learning, and AI; All of which are showcased in my projects page! " +
-                            "*something about school*" +
+                            "*something about school what*" +
                             "*extension of my career goals*"
                         }
                     />
