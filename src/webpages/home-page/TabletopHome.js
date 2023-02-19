@@ -1,6 +1,7 @@
 import React from 'react';
 import { Postcard } from '../../components/Postcard';
 import { TitleLabel } from '../../components/TitleLabel';
+import me from '../../images/me.jpg'
 import uf from '../../images/ufgator.jpg'
 import './TabletopHome.css'
 
@@ -13,9 +14,13 @@ class TabletopHome extends React.Component {
                     <Postcard
                         type={"pictureLSplit"}
                         in={false}
-                        url={uf}
-                        contentL={"welcoming introduction"}
-                        contentR={"*short description of website/myself*"}
+                        url={me}
+                        contentL={"Hi! I'm Alexander Prokop"}
+                        contentR={
+                            "This is my Website Portfolio! If you scroll down more postcards will be thrown down detailing my career and experiences! " +
+                            "If you press the 'Align Postcards' button all my information will align in a more readable way. " +
+                            "Scroll down to learn more about me!"
+                        }
                     />
                     <Postcard
                         type={"description"}

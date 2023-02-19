@@ -48,6 +48,15 @@ footer{
   }
 }
 
+pre{
+  margin: 0; 
+  font-family: 'bebas';
+}
+
+button:hover{
+  cursor:pointer;
+}
+
 #root {
   margin: 0;
   padding: 0;
@@ -62,19 +71,28 @@ footer{
   flex-direction: column;
   justify-content: center;
   position: sticky;
-  left: 1vw;
   top: 25%;
   z-index: 2;
-  width: 3vw;
+  margin-left: 2%;
 }
 
 .format-button {
   z-index: 2;
   font-size: 2vw;
-  margin: 1%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  padding: 0;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: fit-content;
+}
+
+.inner-border{
+  padding: 5%;
   width: fit-content;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: goldenrod;
+  
 }
 
 .align-animation-class{

@@ -126,7 +126,7 @@ class TabletopProjects extends React.Component {
                             "Duration: Sept 21, 2022|" +
                             "Languages: Arduino/C++|" +
                             "Arduino Libraries: Servo.h|" +
-                            "Hardware: Arduino, Low Voltage Servo Motors, PlayStation 2 Controller"
+                            "Hardware: Arduino, Servo Motors, PlayStation 2 Controller"
                         }
                     />
 
