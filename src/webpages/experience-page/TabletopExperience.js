@@ -64,7 +64,6 @@ class TabletopExperience extends React.Component {
                             "Train new crew members on basic procedures for each station and monitor progress for improvement|" +
                             "Troubleshoot various Henny Penny brand machines and legacy ticketing system|" +
                             "Properly stock and timestamp product to provide fresh ingredients for customers|" +
-                            "Document stock and report to managers over current supply|" +
                             "Maintain a properly cleaned and sanitized environment and workstation|" +
                             "Follow proper closing procedures to maintain store cleanliness for opening crew"
                         }
