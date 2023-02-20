@@ -66,19 +66,15 @@ button:hover{
   align-items: center;
 }
 
-.format-button-container {
+.format-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: sticky;
-  top: 25%;
-  z-index: 2;
+  top: 15%;
   margin-left: 2%;
-}
-
-.format-button {
   z-index: 2;
-  font-size: 2vw;
+  font-size: 1.75vw;
   padding: 0;
   background-color: black;
   border: 1px solid black;
@@ -93,6 +89,33 @@ button:hover{
   border-radius: 10px;
   background-color: goldenrod;
   
+}
+
+@media screen and (min-width: 1280px){
+  .format-button{
+    border-radius: 5px;
+  }
+  .inner-border{
+    width: 15vw;
+    border: 5px solid black;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 601px){
+  
+}
+
+@media screen and (max-width: 600px){
+  .format-button{
+    font-size: 3vw;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .inner-border{
+    border: 3px solid black;
+    border-radius: 12px;
+  }
 }
 
 .align-animation-class{
