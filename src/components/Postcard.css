@@ -1,3 +1,36 @@
+video{
+  overflow: hidden;
+}
+@media screen and (min-width: 601px) {
+  video{
+    -moz-transform:scale(.5) rotate(270deg);
+    -webkit-transform:scale(.5) rotate(270deg);
+    -o-transform:scale(.5) rotate(270deg);
+    -ms-transform:scale(.5) rotate(270deg);
+    transform:scale(.5) rotate(270deg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  video{
+    -moz-transform:scale(.65) rotate(270deg);
+    -webkit-transform:scale(.65) rotate(270deg);
+    -o-transform:scale(.65) rotate(270deg);
+    -ms-transform:scale(.65) rotate(270deg);
+    transform:scale(.65) rotate(270deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  video{
+    -moz-transform:scale(.5) rotate(270deg);
+    -webkit-transform:scale(.5) rotate(270deg);
+    -o-transform:scale(.5) rotate(270deg);
+    -ms-transform:scale(.5) rotate(270deg);
+    transform:scale(.5) rotate(270deg);
+  }
+}
+
 .postcard{
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   display: flex;

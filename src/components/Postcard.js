@@ -202,6 +202,29 @@ class Postcard extends React.Component {
                     </CSSTransition>
                 );
             }
+            case "videoRList": {
+                return (
+                    <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">
+                        <div ref={this.myRef} className='postcard'
+                            style={{
+                                width: width,
+                                height: height,
+                                transform: 'rotate(' + angle + 'deg)',
+                                backgroundImage: 'linear-gradient(' + (-1 * angle) + 'deg , lightgray, white'
+                            }}>
+                            <div className='postcard-container-half'>
+                                <List className='postcard-paragraph' type={"picture"} content={this.state.contentL}/>
+                            </div>
+                            <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
+                            <div className='postcard-container-half postcard-picture-rotate90'>
+                                <video alt="failed" className='postcard-picture' autoPlay={true} muted={true} loop={true}>
+                                    <source src={this.props.url} type={"video/mp4"}/>
+                                </video>
+                            </div>
+                        </div>
+                    </CSSTransition>
+                );
+            }
             case "title": {
                 return (
                     <CSSTransition nodeRef={this.myRef} in={this.state.in} timeout={2000} classNames="postcard-animate">

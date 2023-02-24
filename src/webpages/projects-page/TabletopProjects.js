@@ -8,6 +8,8 @@ import cell from '../../images/Cellular-Automata.PNG'
 import CV from '../../images/OpenCV.PNG'
 import portfolio from '../../images/Postcard-Portfolio.PNG'
 import socw from '../../images/StackOverflowContentWidener.jpg'
+import monitor from '../../images/Monitor.jpg'
+import arm from '../../images/PS2Arm.mp4'
 
 class TabletopProjects extends React.Component {
     /*
@@ -142,13 +144,13 @@ class TabletopProjects extends React.Component {
                         }
                     />
                     <Postcard
-                        type={"pictureRList"}
+                        type={"videoRList"}
                         in={false}
-                        url={uf}
+                        url={arm}
                         contentL={
                             "Duration: Sept 21, 2022|" +
                             "Languages: Arduino/C++|" +
-                            "Arduino Libraries: Servo.h|" +
+                            "Arduino Libraries: Servo.h, PS2lib.h|" +
                             "Hardware: Arduino, Servo Motors, PlayStation 2 Controller"
                         }
                     />
@@ -170,7 +172,7 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureLList"}
                         in={false}
-                        url={uf}
+                        url={monitor}
                         contentR={
                             "Duration: An Afternoon|" +
                             "Languages: en-us|" +
