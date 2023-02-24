@@ -3,6 +3,11 @@ import { Postcard } from '../../components/Postcard';
 import { TitleLabel } from '../../components/TitleLabel';
 import './TabletopProjects.css'
 import uf from '../../images/ufgator.jpg'
+import boids from '../../images/Boids.PNG'
+import cell from '../../images/Cellular-Automata.PNG'
+import CV from '../../images/OpenCV.PNG'
+import portfolio from '../../images/Postcard-Portfolio.PNG'
+import socw from '../../images/StackOverflowContentWidener.jpg'
 
 class TabletopProjects extends React.Component {
     /*
@@ -28,13 +33,19 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureRList"}
                         in={false}
-                        url={uf}
+                        url={portfolio}
                         contentL={
                             "Duration: Jan 03, 2023 - Feb 11, 2023|" +
                             "Languages: HTML, CSS, JavaScript|" +
                             "Frameworks: React, Create-React-App|" +
                             "Libraries: React Transition Group, React Router, Bootstrap 4"
                         } />
+                    <Postcard
+                        type={"smallLink"}
+                        in={false}
+                        contentL={"Website Link:"}
+                        link={"https://alexander-postcard-portfolio.netlify.app/"}
+                    />
 
 
 
@@ -51,12 +62,18 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureLList"}
                         in={false}
-                        url={uf}
+                        url={cell}
                         contentR={
                             "Duration: June 9, 2022 - Sept 19, 2022|" +
                             "Languages: HTML, CSS, JavaScript|" +
                             "Libraries: JQuery, Bootstrap 4"
                         }
+                    />
+                    <Postcard
+                        type={"smallLink"}
+                        in={false}
+                        contentL={"Website Link:"}
+                        link={"https://alexander-cellular-automaton.netlify.app/"}
                     />
 
 
@@ -74,12 +91,18 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureRList"}
                         in={false}
-                        url={uf}
+                        url={boids}
                         contentL={
                             "Duration: June 9, 2022 - June 28, 2022|" +
                             "Languages: HTML, CSS, JavaScript|" +
                             "Libraries: JQuery, Bootstrap 4"
                         }
+                    />
+                    <Postcard
+                        type={"smallLink"}
+                        in={false}
+                        contentL={"Website Link:"}
+                        link={"https://alexander-boids.netlify.app/"}
                     />
 
 
@@ -221,7 +244,7 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureRList"}
                         in={false}
-                        url={uf}
+                        url={socw}
                         contentL={
                             "Duration: Dec 22, 2022 - Present|" +
                             "Languages: HTML, CSS, JavaScript|" +
@@ -267,7 +290,7 @@ class TabletopProjects extends React.Component {
                     <Postcard
                         type={"pictureLList"}
                         in={false}
-                        url={uf}
+                        url={CV}
                         contentR={
                             "Duration: Nov 11, 2022 - Present|" +
                             "Languages: C++|" +
