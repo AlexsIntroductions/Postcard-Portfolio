@@ -140,7 +140,8 @@ class TabletopProjects extends React.Component {
                         contentR={
                             "One of my first Arduino Projects. " +
                             "I found a schematic for getting output from a PlayStation 2 (PS2) controller's pins and tried to connect them to a microcontroller to be used to control servos. " +
-                            "I found an arduino library which allowed the PS2 controller's inputs to be read with an Arduino and wired up a 3-Axis arm using 3 servos to be controlled using it. "
+                            "I found an arduino library which allowed the PS2 controller's inputs to be read with an Arduino and wired up a 3-Axis arm using 3 servos to be controlled using it. " +
+                            "I built it out of a Zaxby's take-out box and the video I have was what I sent to friends so apologies for the casual text on the video."
                         }
                     />
                     <Postcard
