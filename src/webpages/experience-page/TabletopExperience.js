@@ -38,13 +38,15 @@ class TabletopExperience extends React.Component {
                         in={false}
                         contentL={"RESPONSIBILITIES"}
                         contentR={
-                            "Assist researchers in technical problems in a timely manor|" +
+                            "Participate and present in daily scrum meetings to identify and prioritize tasks|" + 
+                            "Responsible for assignment and management of service tickets in our system|" +
+                            "Manage, update, and add to knowledge base|" +
+                            "Write detailed SOP’s to be sent to researchers, staff, and students of all levels|" +
+                            "Schedule service meetings with researchers for updates/upgrades without disrupting their workflow|" +
+                            "Effectively communicate causes and solutions to problems and give reasonable estimates for service time|" +
                             "Inspect incoming hardware for flaws and install software to researchers requests|" +
                             "Analyze in-place systems for unoptimizations regarding setup and outdated hardware or software|" +
-                            "Manage ticketing system for IT requests in a timely manor|" +
-                            "Manage building data server to ensure enough space for researchers needs|" +
-                            "Manage and update system images for quick deployment|" +
-                            "Write and Update S.O.P's with detailed explanations for researchers to read and follow along"
+                            "Manage and update system images for quick deployment"
                         }
                     />
                     <Postcard
