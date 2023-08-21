@@ -40,7 +40,6 @@ class TabletopExperience extends React.Component {
                         contentR={
                             "Participate and present in daily scrum meetings to identify and prioritize tasks|" + 
                             "Responsible for assignment and management of service tickets in our system|" +
-                            "Manage, update, and add to knowledge base|" +
                             "Write detailed SOP’s to be sent to researchers, staff, and students of all levels|" +
                             "Schedule service meetings with researchers for updates/upgrades without disrupting their workflow|" +
                             "Effectively communicate causes and solutions to problems and give reasonable estimates for service time|" +
