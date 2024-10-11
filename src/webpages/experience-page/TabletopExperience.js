@@ -13,8 +13,8 @@ class TabletopExperience extends React.Component {
                     <Postcard
                         type={"title"}
                         in={false}
-                        contentL={"Bachelor of Science in Computer Engineering: University of Florida"}
-                        contentR={"Expected Graduation: Spring 2023 | GPA: 2.55"}
+                        contentL={"Bachelor of Science in\nComputer Engineering:\nUniversity of Florida"}
+                        contentR={"Graduation: Fall 2024 | GPA: 2.70"}
                     />
                     <Postcard
                         type={"title"}
@@ -39,13 +39,10 @@ class TabletopExperience extends React.Component {
                         contentL={"RESPONSIBILITIES"}
                         contentR={
                             "Participate and present in daily scrum meetings to identify and prioritize tasks|" + 
-                            "Responsible for assignment and management of service tickets in our system|" +
-                            "Write detailed SOP’s to be sent to researchers, staff, and students of all levels|" +
-                            "Schedule service meetings with researchers for updates/upgrades without disrupting their workflow|" +
-                            "Effectively communicate causes and solutions to problems and give reasonable estimates for service time|" +
-                            "Inspect incoming hardware for flaws and install software to researchers requests|" +
-                            "Analyze in-place systems for unoptimizations regarding setup and outdated hardware or software|" +
-                            "Manage and update system images for quick deployment"
+                            "Deploy institute's custom windows image to incoming hardware|" +
+                            "Write documentation and SOPs for knowledge base, researchers, staff, and students|" +
+                            "Concisely determine and explain encountered hardware or software problems to those affected|" +
+                            "Schedule service meetings around researchers and students' schedules without distrupting their workflow"
                         }
                     />
                     <Postcard
@@ -77,10 +74,7 @@ class TabletopExperience extends React.Component {
                         in={false}
                         contentL={"Undergraduate Research Assistant"}
                         contentR={
-                            "Assisting PhD candidate Joseph Isaac in his dissertation of creating a paradigm for teaching black youth computer science concepts titled \"Black Boy Joy\". " +
-                            "My role is as an educator, Joesph is in charge of teaching the lessons and present activities for the students to do. " +
-                            "While the students are doing activities it is my job to help the students when they get stuck, or teach them if they are unsure of what to do. " +
-                            "I am also expected to gather data on students progress and log it daily for each group we teach."
+                            "Assisted UF PhD candidate in his dissertation research to create a paradigm for teaching underprivileged youth computer science concepts."
                         }
                     />
                     <Postcard 
