@@ -43,7 +43,7 @@ class Postcard extends React.Component {
 
     render() {
         //use width = window.innerWidth to detect if a postcard needs to be displayed differently
-        let width = window.innerWidth * (6 / 7);
+        let width = window.innerWidth * (5 / 6);
         if (width > 1240) {
             width = 1240;
         }
@@ -128,6 +128,7 @@ class Postcard extends React.Component {
                             }}>
                             <div className='postcard-container-half'>
                                 <p className='postcard-paragraph-split'>{this.state.contentL}</p>
+                                <hr className='postcard-split-divider'></hr>
                                 <p className='postcard-paragraph-split'>{this.state.contentR}</p>
                             </div>
                             <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
@@ -154,6 +155,7 @@ class Postcard extends React.Component {
                             <hr className='postcard-divider' style={{ width: (width * .4) }}></hr>
                             <div className='postcard-container-half'>
                                 <p className='postcard-paragraph-split'>{this.state.contentL}</p>
+                                <hr className='postcard-split-divider'></hr>
                                 <p className='postcard-paragraph-split'>{this.state.contentR}</p>
                             </div>
                         </div>

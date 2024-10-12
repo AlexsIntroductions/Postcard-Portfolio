@@ -65,7 +65,8 @@ class TabletopProjects extends React.Component {
                         contentL={"Duration: Aug 2023 - May 2024|" + 
                             "Languages: C/C++, Makefile|" + 
                             "Hardware: STM32 Nucleo, RP2040|" + 
-                            "Libraries: "
+                            "Protocols: SPI, UART, BLE, PWM" + 
+                            ""
                         }
                     />
 
@@ -178,7 +179,7 @@ class TabletopProjects extends React.Component {
                 <TitleLabel content={"GITHUB"} />
                 <>
                     <Postcard
-                        type={"bigLink"}
+                        type={"smallLink"}
                         in={false}
                         contentL={"GitHub Link:"}
                         link={"https://github.com/AlexsIntroductions"}

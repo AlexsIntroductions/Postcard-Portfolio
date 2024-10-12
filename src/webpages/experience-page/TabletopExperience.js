@@ -60,14 +60,13 @@ class TabletopExperience extends React.Component {
                             "Communicate with all stations to ensure the kitchen is running effectively and efficiently|" +
                             "Boost team morale through encouragement and mentorship while assisting if falling behind|" +
                             "Train new crew members on basic procedures for each station and monitor progress for improvement|" +
-                            "Troubleshoot various Henny Penny brand machines and legacy ticketing system|" +
                             "Properly stock and timestamp product to provide fresh ingredients for customers|" +
                             "Maintain a properly cleaned and sanitized environment and workstation|" +
                             "Follow proper closing procedures to maintain store cleanliness for opening crew"
                         }
                     />
                 </>
-                <TitleLabel content={"EXTRA-CURRICULARS"} />
+                <TitleLabel content={"ACTIVITIES"} />
                 <>
                     <Postcard
                         type={"description"}
@@ -82,10 +81,9 @@ class TabletopExperience extends React.Component {
                         in={false}
                         contentL={"GRiP: ExoGlove"}
                         contentR={
-                            "GRiP, or General Relief in Prosthetics, is an organization dedicated to teach students computer and material sciences through helping members of their community by creating prosthetics for those in need. " +
-                            "My role is lead programmer on the ExoGlove team. " +
-                            "Our team is tasked with creating the circuitry and programming of an Exoskeletal Glove designed to give our recipient with muscular dystrophy better grip strength in their affected hand/s. " +
-                            ""
+                            "GRiP, General Relief in Prosthetics, is an organization dedicated to teach students computer and material sciences through helping members of their community by creating prosthetics for those in need. " +
+                            "My role was as a programmer on the ExoGlove team. " +
+                            "Our team is tasked with creating the circuitry and programming of an Exoskeletal Glove designed to give our recipient with muscular dystrophy better grip strength in their affected hand. "
                         }
                     />
                 </>

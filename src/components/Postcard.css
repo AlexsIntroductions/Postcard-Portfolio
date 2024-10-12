@@ -105,8 +105,15 @@ video{
 
 @media screen and (min-width: 601px) {
   p.postcard-paragraph-split{
-    font-size: x-large;
-    line-height: 30px;
+    font-size: 2vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  p.postcard-paragraph-split{
+    font-size: 1.2vw;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -114,15 +121,21 @@ video{
 
 @media screen and (max-width: 600px) {
   p.postcard-paragraph-split{
-    font-size: 9px;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    font-size: 2.5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 .postcard-divider{
   transform: rotate(90deg);
   position: absolute;
   border-top: 3px solid black;
+}
+
+.postcard-split-divider{
+  width: 80%;
+  margin: 0%;
+  padding: 0%;
 }
 
 .postcard-picture{
@@ -140,8 +153,7 @@ video{
 
 @media screen and (min-width: 601px) {
   span.postcard-description{
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 3vw;
     padding: 5%;
   }
 }
@@ -156,9 +168,8 @@ video{
 
 @media screen and (max-width: 600px) {
   span.postcard-description{
-    font-size: 10px;
+    font-size: 2.5vw;
     padding: 7%;
-    padding-top: 2%;
   }
 }
 

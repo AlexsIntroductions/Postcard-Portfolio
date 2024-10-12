@@ -2,6 +2,7 @@ import React from 'react';
 import { Postcard } from '../../components/Postcard';
 import { TitleLabel } from '../../components/TitleLabel';
 import me from '../../images/me.jpg'
+import cats from '../../images/cats.jpg'
 import './TabletopHome.css'
 
 class TabletopHome extends React.Component {
@@ -14,11 +15,10 @@ class TabletopHome extends React.Component {
                         type={"pictureLSplit"}
                         in={false}
                         url={me}
-                        contentL={"Hi! I'm Alexander Prokop"}
+                        contentL={"Welcome! I'm Alexander Prokop and this is my website portfolio"}
                         contentR={
-                            "This is my Website Portfolio! If you scroll down more postcards will be thrown down detailing my career and experiences! " +
-                            "If you press the 'Align Postcards' button all my information will align in a more readable way. " +
-                            "Scroll down to learn more about me!"
+                            "I'm a new graduate from the University of Florida, getting my Bachelor of Science in Computer Engineering. " +
+                            "I designed this website to mimic postcards/note being thrown onto a desk with my information on them. Scroll down and I'll throw down more."
                         }
                     />
                     <Postcard
@@ -26,22 +26,21 @@ class TabletopHome extends React.Component {
                         in={false}
                         contentL={"About Me"}
                         contentR={
-                            "I am a Senior Computer Engineering Student at the University of Florida. " +
-                            "I'm interested in almost all aspects of Programming and have been exploring many avenues to find the direction I'd like to specialize in. " +
-                            "I built this website to explore UX/UI design using React, and I have future projects to explore server side programming, data science and analysis, machine learning, and AI; All of which are showcased in my projects page! "
+                            "My interests align with my degree, being computer programming, embedded systems, and robotics. " + 
+                            "I like to explore these topics through personal projects, many of which are listed on my projects page. " + 
+                            "I find myself to be a lifelong learner, self-motivated to enhance my skills and foster new ones by exploring my interests through projects I’ve done and plan to do in my free time. "
                         }
                     />
                     <Postcard
-                        type={"paragraph"}
+                        type={"pictureRSplit"}
                         in={false}
+                        url={cats}
                         contentL={
-                            "My goals for my career are to become a roboticist and work in the prosthetics field. " +
-                            "Most of my robotics experience involves Arduino and the Raspberry PI and I have some of my robotics related projects in my projects page. " +
-                            "I'm also currently a part of a prosthetics club at my university detailed in my education page. "
+                            "I’ve recently found myself interested in graphic programming and simulations. " + 
+                            "I plan on using what I learn from this to build a simulation program for a robotic arm and to explore systems/engine design."
                         }
                         contentR={
-                            "Until I gain the experience to fulfil that, I plan to dedicate my time to computer engineering research at the University of Florida." +
-                            "Currently I am a part of a research project and I have detailed my experience in my education page!"
+                            "When I'm not working on something or researching for a project, I like to spend time with my cats and playing games with my friends. "
                         }
                     />
                 </>
