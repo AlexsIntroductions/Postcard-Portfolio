@@ -111,9 +111,9 @@ video{
   }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1800px) {
   p.postcard-paragraph-split{
-    font-size: 1.2vw;
+    font-size: 1.8vw;
     padding-top: 5%;
     padding-bottom: 5%;
   }

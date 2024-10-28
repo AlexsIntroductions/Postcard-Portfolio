@@ -78,7 +78,7 @@ button:hover{
   padding: 0;
   background-color: black;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   max-width: fit-content;
 }
 
@@ -93,7 +93,7 @@ button:hover{
 
 @media screen and (min-width: 1280px){
   .format-button{
-    border-radius: 5px;
+    border-radius: 20px;
   }
   .inner-border{
     width: 15vw;
@@ -110,7 +110,7 @@ button:hover{
   .format-button{
     font-size: 3vw;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 12px;
   }
   .inner-border{
     border: 3px solid black;

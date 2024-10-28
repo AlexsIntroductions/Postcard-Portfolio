@@ -7,6 +7,7 @@ import boids from '../../images/Boids.PNG'
 import cell from '../../images/Cellular-Automata.PNG'
 import portfolio from '../../images/Postcard-Portfolio.PNG'
 import nes from '../../images/NesTestLog.png'
+import G8RTOS from '../../images/G8RTOS.png'
 import boda from '../../images/boda.mov'
 
 class TabletopProjects extends React.Component {
@@ -48,6 +49,27 @@ class TabletopProjects extends React.Component {
                     />
 
 
+                    <Postcard
+                        type={"description"}
+                        in={false}
+                        contentL={"Microprocessor Applications 2 Project: G8RTOS"}
+                        contentR={
+                            "A from scratch Cortex-M4 RTOS designed on a TIVA LaunchPad. " + 
+                            "Context switching is handled through the PendSV software interrupt triggered by a SysTick hardware interrupt. " + 
+                            "Features Round-Robin priority thread scheduling and peripheral access controlled through blocking semaphores. " + 
+                            "Supports periodic and aperiodic events, dynamic threading, yielding, sleeping, and interthread communication through custom FIFO data structures."
+                        }/>
+                    <Postcard
+                        type={"pictureRList"}
+                        in={false}
+                        url={G8RTOS}
+                        contentL={"Duration: Aug 2024 - Dex 2024|" + 
+                            "Languages: C, ARM Assembly|" + 
+                            "Hardware: tm4c123gh6pm|" + 
+                            "Protocols: I2C, SPI, UART, Interrupt, Semaphores, Context Switching" + 
+                            ""
+                        }
+                    />
 
                     <Postcard
                         type={"description"}

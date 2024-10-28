@@ -2,12 +2,12 @@ let cards = document.getElementsByClassName("postcard");
 let aligned = false;
 
 function alignItems() {
-    //all need to be animated at the same time
-
-    //DOESNT WORK RIGHT
     for (let i = 0; i < cards.length; i++) {
-        if(cards[i].classList.contains("postcard-animate-enter-done") || 
-        cards[i].classList.contains("postcard-animate-enter") || cards[i].classList.contains("postcard-animate-appear")){
+        if(
+            cards[i].classList.contains("postcard-animate-enter-done") || 
+            cards[i].classList.contains("postcard-animate-enter") || 
+            cards[i].classList.contains("postcard-animate-appear")
+        ){
             cards[i].classList.add("align-animation-class");
         }
     }

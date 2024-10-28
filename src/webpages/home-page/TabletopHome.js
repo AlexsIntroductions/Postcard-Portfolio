@@ -18,7 +18,7 @@ class TabletopHome extends React.Component {
                         contentL={"Welcome! I'm Alexander Prokop and this is my website portfolio"}
                         contentR={
                             "I'm a new graduate from the University of Florida, getting my Bachelor of Science in Computer Engineering. " +
-                            "I designed this website to mimic postcards/note being thrown onto a desk with my information on them. Scroll down and I'll throw down more."
+                            "I designed this website to mimic postcards/notecards being thrown onto a desk with my information on them. Scroll down and I'll throw down more."
                         }
                     />
                     <Postcard
